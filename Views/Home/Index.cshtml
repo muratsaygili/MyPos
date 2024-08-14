@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string status = TempData["Message"] as string;
+    string response = TempData["response"] as string;
+    string requestStr = TempData["requestStr"] as string;
+}
+
+<div class="text-center">
+    <h5 class="display-4">Welcome</h5>
+    <a asp-controller="MyPos" asp-action="Index" class="h3">Go to MyPos Payment</a>
+    <hr/>
+    <h4 class="badge bg-info">@status</h4>
+    <hr/>
+    <h4>Refund Request:</h4>
+    <p>@requestStr</p>
+    <hr/>
+    <h4>Refund response:</h4>
+    <p>@response</p>
+</div>

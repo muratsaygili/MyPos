@@ -1,0 +1,9 @@
+﻿@model string
+@{
+	string requestData = ViewBag.RequestData;
+}
+<div class="row m-2 p-2" style="word-wrap:break-word;">
+	<h3>Request Data</h3>
+	<p>@requestData</p>
+</div>
+@Html.Raw(Model)
